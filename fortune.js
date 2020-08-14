@@ -1,13 +1,9 @@
-'use strict'; //エラーチェック
+'use strict'; 
 
-  const btn = document.getElementById('btn');//btn要素取得
+  const btn = document.getElementById('btn');
 
   btn.addEventListener('click',() => {
-    //const results = ['Lucky','Ordinary','Bad','ExtraOrdinary'];
-      //const n = Math.floor(Math.random() * results.length)
-    //btn.textContent = results[Math.floor(Math.random() * results.length)];
-      //btn.textContent = results[n]; ↑定数nを代入せずにそのままぶち込むやり方。
-      //より短い文章になる。
+
     const n = Math.random();
     if(n < 0.05){
       btn.textContent = 'Lucky'; //5%の確立でLucky
@@ -18,17 +14,6 @@
     } else {
       btn.textContent = 'Ordinary'; //残り55%
     }
-
-    //switch (n) {
-    //  case 0 :
-    //    btn.textContent = 'Lucky';
-      //  break;
-      //case 1 :
-      //  btn.textContent = 'Ordinary';
-      //  break;
-    //  case 2 :
-    //    btn.textContent = 'Bad';
-    //    break;
-    //  } switchを利用したケース。スペルミス注意。
+    
   }
 );
